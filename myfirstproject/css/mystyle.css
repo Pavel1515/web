@@ -1,0 +1,290 @@
+*{
+padding: 0;
+margin: 0;
+}
+.menu{
+  display: flex;
+}
+#menu__toggle{
+  opacity:0;
+}
+.menu_box{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu_box li{
+  display: inline; /* Отображать как строчный элемент */
+  margin-right: 50px; /* Отступ слева */
+
+}
+.menu__item {
+  text-decoration : none;
+  color: #e5e8e9;
+}
+.h2{
+  display: flex;
+  justify-content: center;
+}
+.h2 img{
+  padding-top: 37px;
+  width: 329px;
+  height: 328px;
+}
+.text_buton p{
+  padding-top: 67px;
+  padding-left: 72px;
+  font-family: 'Segoe WPN';
+  font-size: 64.7px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+}
+.text_buton span{
+  font-size: 44.7px;
+  font-weight: 300;
+}
+.text_buton a{
+  font-family: 'Segoe WPN';
+  font-size: 22.7px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+  margin-left: 72px;
+  padding-top: 14px;
+  display: block;
+  text-align: center;
+  width: 146px;
+  height: 40px;
+  opacity: 0.41;
+  background-color: #12b367;
+  border: 1px solid rgba(0,0,0,0.36);
+  text-decoration: none;
+}
+.top1{
+  text-align: center;
+  max-width: 154px;
+}
+.top1 p{
+  font-family: 'Segoe WPN';
+  font-size: 26.7px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #5c5b5b;
+  padding-top:22px ;
+}
+.top2{
+  text-align: center;
+  max-width: 154px;
+}
+.top2 p{
+  font-family: 'Segoe WPN';
+  font-size: 26.7px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #5c5b5b;
+  padding-top:22px ;
+}
+.top3{
+  text-align: center;
+  max-width: 154px;
+}
+.top3 p{
+  font-family: 'Segoe WPN';
+  font-size: 26.7px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #5c5b5b;
+  padding-top:22px ;
+}
+.top4{
+  text-align: center;
+  max-width: 154px;
+}
+.top4 p{
+  font-family: 'Segoe WPN';
+  font-size: 26.7px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #5c5b5b;
+  padding-top:22px ;
+}
+.top_container{
+  padding-top: 92px;
+  display: flex;
+  justify-content: space-around;
+}
+.ipad{
+  display: block;
+  margin: 0 auto;
+  padding-top: 109px;
+}
+h2{
+  font-family: 'Segoe WPN';
+  font-size: 38.7px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #4f4f4f;
+  padding-top: 58px;
+  padding-left: 60px;
+}
+.text_device_h{
+  font-family: 'Univers CE';
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #818181;
+  padding-left: 60px;
+  padding-top: 28px;
+  max-width: 897px;
+}
+.check_container img{
+  max-width: 10px;
+  padding-top: 30px;
+
+}
+.window_container{
+  display: flex;
+  padding-top: 90px;
+}
+.check_container span{
+  padding: 10px;
+}
+.check_container h3{
+  font-family: 'Segoe WPN';
+  font-size: 32.7px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #4f4f4f;
+}
+.check_container{
+  padding-left: 38px;
+}
+.window_container img{
+  padding-left: 40px;
+}
+.table_orange{
+  background-color: #e67624;
+  width: 470px;
+  height: 109px;
+  border-radius: 6px;
+}
+.table_blue{
+  margin-left: 66px;
+  background-color: #01d4f3;
+  width: 470px;
+  height: 109px;
+    border-radius: 6px;
+}
+.table_container{ 
+    padding-left: 60px;
+font-family: 'Segoe WP';
+font-size: 28px;
+line-height: 21px;
+font-weight: 300;
+color: #ffffff; 
+display: flex;
+}
+.table_container p{
+
+  padding-top: 15px;
+  padding-left: 27px;
+}
+.table_container input{
+  width: 155px;
+  height: 26px;
+  margin-top: 20px;
+  margin-left: 26px;
+}
+@media screen and (max-width: 802px) {
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+}
+ }
